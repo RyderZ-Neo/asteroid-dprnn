@@ -1,3 +1,4 @@
+# These Settings will be overridden by those in run.sh
 # Filterbank config
 filterbank:
   n_filters: 64
