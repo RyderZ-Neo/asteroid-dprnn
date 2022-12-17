@@ -69,14 +69,14 @@ python_path=python
 # If you wish to rerun this script in the future please comment this line out.
 $python_path local/scripts/augment_train_noise.py --wham_dir $wham_dir
 
-for n_src in 2 ; do
+for n_src in 2 ; do # Only Generate 2Mix
   metadata_dir=metadata/Libri$n_src"Mix"
   $python_path local/scripts/create_librimix_from_metadata.py --librispeech_dir $librispeech_dir \
     --wham_dir $wham_dir \
     --metadata_dir $metadata_dir \
     --librimix_outdir $librimix_outdir \
     --n_src $n_src \
-    --freqs 8k  \
-    --modes min \
+    --freqs 8k  \   #Only Generate 8000k sampling frequency
+    --modes min \   #Only Generate min 
     --types mix_clean mix_both mix_single
 done

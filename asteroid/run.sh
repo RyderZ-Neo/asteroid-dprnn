@@ -45,7 +45,7 @@ segment=1
 task=sep_clean  # one of 'enh_single', 'enh_both', 'sep_clean', 'sep_noisy'
 
 
-eval_use_gpu=0
+eval_use_gpu=1 # 1 means you want to use gpu in evaluation stage 0 means you only will use cpu
 # Need to --compute_wer 1 --eval_mode max to be sure the user knows all the metrics
 # are for the all mode.
 compute_wer=0
