@@ -1,4 +1,5 @@
 # Filterbank config
+# testing if it works
 filterbank:
   n_filters: 64
   kernel_size: 2
